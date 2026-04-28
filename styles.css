@@ -4,4 +4,6 @@
 .navigation{background-color:pink ; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex;margin:auto;padding-left: 500px;
 
 }
-.intro{}
+.intro{
+    border-radius: 30%;background-color: pink;height: 250px;width: 250px;padding: 50px;margin-left: 520px;margin-top: 50px;font-size: larger;
+}
