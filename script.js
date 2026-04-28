@@ -8,7 +8,8 @@ const maleNames = [
   "Kofi",
   "Kwame",
 ];
-const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+const femaleNames = [
+    "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 const weekDays = [
   "Sunday",
   "Monday",
@@ -49,10 +50,10 @@ function parseMonth(value) {
 // Choose the correct Akan name based on the weekday index and gender.
 function getAkanName(dayIndex, gender) {
   const normalizedGender = gender.trim().toLowerCase();
-  if (normalizedGender === "male" || normalizedGender === "m") {
+  if (normalizedGender === "male" ) {
     return maleNames[dayIndex];
   }
-  if (normalizedGender === "female" || normalizedGender === "f") {
+  if (normalizedGender === "female" ) {
     return femaleNames[dayIndex];
   }
   return null;
