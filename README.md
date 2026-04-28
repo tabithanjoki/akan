@@ -27,4 +27,4 @@ Javascript
 ## contact Information
 number:0705829131
 ## copyright information
-Copyright (c) 2025 all
+Copyright (c) 2025 all rights 
