@@ -1,9 +1,10 @@
 .logo{size: 20px;height: 100px;width: 100px;margin-left:0px;border-radius: 50%;padding-left: 0px;
 
 }
-.navigation{background-color:pink ; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex;margin:auto;padding-left: 500px;
+.navigation{background-color:lightgrey ; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex;margin:auto;padding-left: 500px;
 
 }
 .intro{
-    border-radius: 30%;background-color: pink;height: 250px;width: 250px;padding: 50px;margin-left: 520px;margin-top: 50px;font-size: larger;
+    border-radius: 30%;background-color:lightgray;height: 250px;width: 250px;padding: 50px;margin-left: 520px;margin-top: 50px;font-size: larger;
 }
+.footer{display: flex;background-color:lightgray;text-align: center;justify-content: center;gap: 100px;}
