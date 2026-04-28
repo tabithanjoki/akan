@@ -33,27 +33,27 @@ function parseMonth(value) {
     "november",
     "december",
   ];
-  const trimmed = value.trim().toLowerCase();
-  const number = parseInt(trimmed, 10);
-  if (!Number.isNaN(number) && number >= 1 && number <= 12) {
+  
+  const number = parseInt();
+  if ( number >= 1 && number <= 12) {
     return number;
   }
-  const index = monthNames.indexOf(trimmed);
+  const index = monthNames.indexOf();
   return index >= 0 ? index + 1 : null;
 }
 
 function getAkanName(dayIndex, gender) {
-  const normalizedGender = gender.trim().toLowerCase();
-  if (normalizedGender === "male" || normalizedGender === "m") {
+  const normalizedGender = gender();
+  if (normalizedGender === "male") {
     return maleNames[dayIndex];
   }
-  if (normalizedGender === "female" || normalizedGender === "f") {
+  if (normalizedGender === "female") {
     return femaleNames[dayIndex];
   }
   return null;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+
   const form = document.querySelector("form");
 
   form.addEventListener("submit", (event) => {
@@ -64,19 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const yearInput = document.getElementById("year").value;
     const genderInput = document.getElementById("gender").value;
 
-    const day = parseInt(dayInput, 10);
+    const day = parseInt(dayInput);
     const month = parseMonth(monthInput);
-    const year = parseInt(yearInput, 10);
+    const year = parseInt(yearInput);
 
-    if (
-      Number.isNaN(day) ||
-      month === null ||
-      Number.isNaN(year) ||
-      !genderInput.trim()
-    ) {
-      alert("Please enter a valid day, month, year and gender.");
-      return;
-    }
+   
 
     const birthDate = new Date(year, month - 1, day);
     if (
