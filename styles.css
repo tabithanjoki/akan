@@ -8,3 +8,4 @@
     border-radius: 30%;background-color:lightgray;height: 250px;width: 250px;padding: 50px;margin-left: 520px;margin-top: 50px;font-size: larger;
 }
 .footer{display: flex;background-color:lightgray;text-align: center;justify-content: center;gap: 100px;}
+.form{border-radius: 16px;padding: 300px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 400;font-size: x-large;padding-left: 500px;padding-top: 100px;padding-bottom: 100px;border-radius:10%;width: 600px;height: 600px;}
