@@ -1,11 +1,60 @@
-.logo{size: 20px;height: 100px;width: 100px;margin-left:0px;border-radius: 50%;padding-left: 0px;
-
+.logo {
+  size: 20px;
+  height: 100px;
+  width: 100px;
+  margin-left: 0px;
+  border-radius: 50%;
+  padding-left: 0px;
 }
-.navigation{background-color:lightgrey ; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex;margin:auto;padding-left: 500px;
-
+.navigation {
+  background-color: lightgrey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  margin: auto;
+  padding-left: 500px;
 }
-.intro{
-    border-radius: 30%;background-color:lightgray;height: 250px;width: 250px;padding: 50px;margin-left: 520px;margin-top: 50px;font-size: larger;
+.intro {
+  border-radius: 30%;
+  background-color: lightgray;
+  height: 250px;
+  width: 250px;
+  padding: 50px;
+  margin-left: 520px;
+  margin-top: 50px;
+  font-size: larger;
 }
-.footer{display: flex;background-color:lightgray;text-align: center;justify-content: center;gap: 100px;}
-.form{border-radius: 16px;padding: 300px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 400;font-size: x-large;padding-left: 500px;padding-top: 100px;padding-bottom: 100px;border-radius:10%;width: 600px;height: 600px;}
+.footer {
+  display: flex;
+  background-color: lightgray;
+  text-align: center;
+  justify-content: center;
+  gap: 100px;
+}
+.form {
+  border-radius: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+  font-size: x-large;
+  border-radius: 10%;
+  width: 400px;
+  height: auto;
+  border: 2px solid black;
+  background: linear-gradient(
+    to bottom,
+    #ce1126 33%,
+    #fcd116 33% 66%,
+    #006b3f 66%
+  );
+  padding: 20px;
+  margin: 50px auto;
+}
+input[type="text"],
+input[type="number"] {
+  width: 250px;
+  height: 35px;
+  font-size: large;
+  margin-bottom: 10px;
+}
+.body {
+  background-color: bisque;
+}
