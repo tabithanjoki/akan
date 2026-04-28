@@ -20,7 +20,7 @@ const weekDays = [
   "Saturday",
 ];
 
-// Convert month input to a number between 1 and 12.
+
 // The user can type a month number or the month name.
 function parseMonth(value) {
   const number = parseInt(value, 10);
