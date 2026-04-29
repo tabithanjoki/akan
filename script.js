@@ -19,6 +19,22 @@ const weekDays = [
   "Saturday",
 ];
 
+// Array of month names
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 // Get the Akan name based on the day index and gender
 function getAkanName(dayIndex, gender) {
   if (gender === "male") {
@@ -27,16 +43,19 @@ function getAkanName(dayIndex, gender) {
   if (gender === "female") {
     return femaleNames[dayIndex];
   }
-  return "Unknown";
+  else {
+    return "Unknown";
+  }
+  
 }
 
 // Listen for form submit
-document.querySelector("form").addEventListener("submit", function (event) {
+document.querySelector("form").addEventListener("submit", function (event)  {
   event.preventDefault();
 
   // Get the input values
-  const dd = parseInt(document.getElementById("birth-date").value, 10);
-  let mm = parseInt(document.getElementById("month").value, 10);
+  let dd = parseInt(document.getElementById("birth-date").value, 10);
+  let mm = months.indexOf(document.getElementById("month").value) + 1;
   let year = parseInt(document.getElementById("year").value, 10);
   const gender = document.getElementById("gender").value;
 
@@ -51,8 +70,8 @@ document.querySelector("form").addEventListener("submit", function (event) {
   }
 
   // Calculate century and year parts
-  const cc = Math.floor(year / 100);
-  const yy = year % 100;
+  let cc = Math.floor(year / 100);
+  let yy = year % 100;
 
   // Apply the formula
   let d =
